@@ -1,39 +1,42 @@
-# Emotion Recognition Using Body Gestures and Facial Expressions
+# 🎭 Emotion Recognition Using Body Gestures and Facial Expressions
 
-This project is a real-time emotion recognition system that uses **MediaPipe** for extracting body and face landmarks and a machine learning model for classifying emotions based on the extracted keypoints.
-
-## 🔍 Project Overview
-
-The system uses:
-- **MediaPipe Holistic** for detecting facial landmarks, body posture, and hand positions.
-- A trained **machine learning model** (RandomForest/any ML classifier) for predicting human emotions.
-- **OpenCV** for real-time video capture and visualization.
-
-## 🎯 Objective
-
-To classify emotions such as *happy, sad, angry, surprised*, etc., using both **facial expressions** and **body gestures**.
+A real-time emotion recognition system using **MediaPipe** and **Machine Learning**, capable of detecting and classifying human emotions based on **facial expressions**, **hand gestures**, and **body posture**.
 
 ---
 
-## 🛠️ Features
+## 📌 Project Overview
 
-- Real-time detection from webcam
-- Keypoint extraction using MediaPipe
-- Classification of emotion using trained model (`body_language.pkl`)
-- Visualization of face mesh and pose/hand landmarks
-- Display predicted emotion with probability
+This project combines:
+- **MediaPipe Holistic** for extracting body, face, and hand landmarks
+- A **trained ML model** for emotion classification
+- **OpenCV** for real-time webcam processing and display
 
 ---
 
-## 🧠 Model
+## 🎯 Goals
 
-The model was trained on keypoints extracted from:
-- **33** pose landmarks (with 4 values each: x, y, z, visibility)
-- **468** face landmarks (x, y, z, visibility)
-- **21** left hand + **21** right hand landmarks (x, y, z)
+- Detect facial and body landmarks in real time
+- Extract 2,130 keypoint features per frame
+- Predict human emotions like *happy*, *sad*, *angry*, *surprised*, etc.
+- Visualize both prediction and facial/pose mesh
 
-➡️ **Total features**: `33*4 + 468*4 + 21*3 + 21*3 = 2130`
+---
 
-The model is stored in a pickle file:
+## 🧠 Model Details
+
+The model uses:
+- **Pose Landmarks**: 33 points × 4 features = 132
+- **Face Landmarks**: 468 points × 4 features = 1,872
+- **Left & Right Hand**: 21 × 3 × 2 = 126  
+➡️ **Total**: **2,130 features**
+
+Trained model is stored in `body_language.pkl`.
+
+---
+
+## 🛠️ Requirements
+
+Make sure you have **Python 3.7+**. Install dependencies using:
+
 ```bash
-body_language.pkl
+pip install -r requirements.txt
