@@ -1,4 +1,4 @@
-# 🎭 Emotion Recognition Using Body Gestures and Facial Expressions
+# 🎭 Emotion Detection via Facial Expressions & Body Gestures
 
 A real-time emotion recognition system using **MediaPipe** and **Machine Learning**, capable of detecting and classifying human emotions based on **facial expressions**, **hand gestures**, and **body posture**.
 
