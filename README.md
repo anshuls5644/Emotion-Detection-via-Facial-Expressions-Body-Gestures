@@ -34,9 +34,29 @@ Trained model is stored in `body_language.pkl`.
 
 ---
 
+## 📸 Results
+
+Here are some sample outputs from the emotion recognition system:
+
+![Prediction Output](results/img1.jpg)
+![Prediction Output](results/img2.jpg)
+![Prediction Output](results/img3.jpg)
+![Prediction Output](results/img4.jpg)
+![Prediction Output](results/img5.jpg)
+![Prediction Output](results/img6.jpg)
+![Prediction Output](results/img7.jpg)
+![Prediction Output](results/img8.jpg)
+![Data Flow Diagram](results/dfd.jpg)
+
+
+
+
 ## 🛠️ Requirements
 
 Make sure you have **Python 3.7+**. Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
+
+
+
